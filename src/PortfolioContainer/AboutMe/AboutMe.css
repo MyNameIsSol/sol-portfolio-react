@@ -1,0 +1,139 @@
+.about-me-container {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .about-me-parent {
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .about-me-title .h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-family: "Poppins SemiBold";
+  }
+  
+  .subheading {
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .underline {
+    width: 80px;
+    height: 4px;
+    background: #ff4b2b;
+    margin: 0 auto 40px;
+    border-radius: 5px;
+  }
+  
+  .about-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    gap: 20px;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+    width: 100%;
+  }
+  
+  .about-image {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-content {
+    flex: 1;
+    text-align: left;
+    min-width: 300px;
+    padding: 30px 40px 10px;
+  }
+  
+  .about-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .highlights{
+    margin-top: 60px;
+  }
+  .highlights h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .highlights ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Creates space for the bullets */
+    margin-bottom: 20px;
+  }
+  
+  .highlights ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .highlights li {
+    display: flex;
+    align-items: center; /* Align bullet and text vertically */
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 24px;
+    color: #333;
+  }
+  
+  .highlights li::before {
+    content: "•"; /* Disc bullet */
+    position: absolute;
+    left: 0;
+    font-size: 2.1em;
+    color: #ff4b2b; /* Bullet color */
+  }
+  
+
+.about-options{
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+}
+.profile-options .highlighted-btn{
+    margin: 0 0 0 28px;
+}
+.profile-options .highlighted-btn:hover{
+    margin: 0 0 0 28px;
+    background-color: cornsilk;
+    color: #111;
+}
+
+@media screen and (max-width: 1110px){
+    .profile-options .btn{
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+}
+@media screen and (max-width: 810px){
+
+    .profile-options{
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-options .highlighted-btn{
+        margin: 0 !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .about-box{
+        flex-direction: column;
+    }
+}
+
+
