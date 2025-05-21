@@ -107,7 +107,7 @@
     }
     .profile-parent{
         flex-direction: column-reverse;
-        margin: 40px 0 0 0;
+        margin: 30px 0 0 0;
     }
     .profile-options{
         display: flex;
@@ -123,16 +123,11 @@
         text-align: center;
     }
 }
-@media screen and (max-width: 768px) {
-    .profile-parent{
-        margin-top: 70px;
-    }
-}
 @media screen and (max-width: 375px){
     .profile-picture{
         height: 275px;
         width: 275px;
-        margin-top: -90px;
+        /* margin-top: -90px; */
     }
     .profile-details{
         width: 90%;
