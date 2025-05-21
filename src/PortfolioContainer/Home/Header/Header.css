@@ -42,7 +42,7 @@
   @media (max-width: 768px) {
     .header {
         justify-content: space-between;
-        padding: 20px 30px;
+        padding: 15px 30px;
     }
     .nav {
       position: absolute;
@@ -52,7 +52,6 @@
       background: #0d1015;
       flex-direction: column;
       width:100%;
-      padding: 20px;
       transition: display 0.3s ease;
     }
     .nav.active {
