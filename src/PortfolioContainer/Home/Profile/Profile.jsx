@@ -2,7 +2,15 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import './Profile.css';
 
-function Profile() {
+// function Profile() {
+    const Profile = () => {
+        const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                setShowMenu(false); // close menu on click
+            }
+        };
     return (
       <>
     <div className="profile-container">
@@ -64,7 +72,7 @@ function Profile() {
                 </div>
 
                 <div className='profile-options'>
-                    <button className='btn primary-btn' id='hire-me'>
+                    <button className='btn primary-btn' id='hire-me' onClick={() => scrollToSection('contact')}>
                         {""}
                         Hire Me{" "}
                     </button>

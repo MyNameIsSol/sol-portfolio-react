@@ -3,7 +3,15 @@ import './AboutMe.css';
 import { motion } from 'framer-motion';
 import aboutPhoto from '../../assets/AboutMe/Ebuka-Solomon-Okoye.jpg';
 
-function AboutMe() {
+// function AboutMe() {
+const AboutMe = () => {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+          setShowMenu(false); // close menu on click
+        }
+      };
     return (
       <>
         <motion.section
@@ -44,7 +52,7 @@ function AboutMe() {
                         </div>
 
                         <div className='about-options'>
-                            <button className='btn primary-btn' id='hire-me'>
+                            <button className='btn primary-btn' id='hire-me' onClick={() => scrollToSection('contact')}>
                                 {""}
                                 Hire Me{" "}
                             </button>
