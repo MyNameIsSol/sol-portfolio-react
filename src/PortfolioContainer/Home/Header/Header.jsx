@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Header.css'; // Optional: for styling
+import './Header.css'; 
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <>
     <header className="header">
-      <div className="logo">Mike</div>
+      <div className="logo">Sol</div>
 
       <nav className={showMenu ? "nav active" : "nav"}>
         <ul>

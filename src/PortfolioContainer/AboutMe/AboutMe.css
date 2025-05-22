@@ -24,7 +24,7 @@
   .underline {
     width: 80px;
     height: 4px;
-    background: #ff4b2b;
+    background: #B22222;
     margin: 0 auto 40px;
     border-radius: 5px;
   }
@@ -39,12 +39,13 @@
   }
   .about-image {
     flex: 1;
-    min-width: 300px;
+    /* display: flex; */
+    min-width: 550px;
+    height: 620px;
+    overflow:hidden;
   }
   .about-image img {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
+    width: 600px;
   }
   
   .about-content {
@@ -92,7 +93,7 @@
     position: absolute;
     left: 0;
     font-size: 2.1em;
-    color: #ff4b2b; /* Bullet color */
+    color: #B22222; /* Bullet color */
   }
   
 
@@ -136,8 +137,11 @@
     }
     .about-image{
         width: 100%;
-        max-height: 450px;
+        max-height: 480px;
         overflow: hidden;
+    }
+    .about-image img {
+      width: 550px;
     }
     .about-content {
       padding: 30px 10px 10px;

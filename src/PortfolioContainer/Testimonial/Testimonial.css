@@ -20,13 +20,13 @@
   .underline {
     width: 80px;
     height: 4px;
-    background: #ff4b2b;
+    background: #B22222;
     margin: 0 auto 40px;
     border-radius: 5px;
   }
   .testimonial-parent{
     position: relative;
-    padding: 50px;
+    padding: 60px 50px;
     display: flex;
     gap: 20px;
     background-image: url('../../assets/Testimonial/group-in-office.jpg');
@@ -67,7 +67,7 @@
   blockquote::before {
     content: open-quote;
     font-size: 30px;
-    color: #ff5722;
+    color: #B22222;
     font-weight: 600;
     margin-right: 4px;
   }
@@ -76,7 +76,7 @@
     content: close-quote;
     font-size: 30px;
     font-weight:600;
-    color: #ff5722;
+    color: #B22222;
     margin-left: 4px;
   }
   .star-list{
@@ -84,7 +84,7 @@
   }
   .star-list li{
     padding-right: 3px;
-    color: #ff5722;
+    color: #B22222;
   }
   .client-info{
     display: flex;
@@ -114,10 +114,10 @@
   @media screen and (max-width: 768px){
     .testimonial-parent{
       flex-direction: column;
-      padding: 10px;
+      padding: 30px 10px;
     }
     .testimonial-card{
-      padding: 20px 20px 10px;
+      padding: 30px 20px 30px;
     }
     .client-image{
       width: 50px;
