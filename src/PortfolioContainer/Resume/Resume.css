@@ -198,9 +198,6 @@
     gap: 20px;
     margin-bottom: 10px;
   }
-  .skill-title h4{
-
-  }
   .js-progress {
     width: 100%;
     height: 20px;
@@ -214,4 +211,38 @@
     background-color: #1c1c2b ; /* Your primary brown */
     width: 0%; /* Set dynamically with inline style or state */
     transition: width 0.5s ease;
+  }
+  @media screen and (max-width: 768px){
+    .resume-parent {
+      flex-direction: column;
+      gap: 30px;
+      padding: 0;
+    }
+    .resume-content {
+      margin-left: 10px;
+    }
+    .project-text-top{
+      margin-bottom: 45px;
+    }
+    .resume-tabs {
+      width:98%;
+    }
+    .badge{
+      top: 30px;
+    }
+    .skill{
+      grid-template-columns: 1fr;
+    }
+    .skill-text-top{
+      padding-left: 0;
+    }
+    .skill-title{
+      gap: 15px;
+    }
+    .js-progress {
+      margin-left: 30px;
+    }
+    .js-progress {
+      width: 90%;
+    }
   }

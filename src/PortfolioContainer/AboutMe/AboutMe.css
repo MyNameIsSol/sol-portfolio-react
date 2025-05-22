@@ -37,17 +37,14 @@
     overflow: hidden;
     gap: 20px;
   }
-  
-  .about-image img {
-    max-width: 100%;
-    height: auto;
-    /* border-radius: 10px; */
-    width: 100%;
-  }
-  
   .about-image {
     flex: 1;
     min-width: 300px;
+  }
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
   }
   
   .about-content {
@@ -131,9 +128,24 @@
     }
 }
 @media screen and (max-width: 768px){
+  .about-me-container {
+    padding: 60px 10px;
+  }
     .about-box{
         flex-direction: column;
     }
+    .about-image{
+        width: 100%;
+        max-height: 450px;
+        overflow: hidden;
+    }
+    .about-content {
+      padding: 30px 10px 10px;
+    }
+    .about-options{
+      gap: 10px;
+  }
+  
 }
 
 
